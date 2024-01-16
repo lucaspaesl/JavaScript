@@ -1,8 +1,8 @@
-var planeta = 'mercurio'
+var planeta = 'terra'
 console.log(`Você mora em ${planeta}`)
-if (planeta == 'Terra') {
+if (planeta == 'terra') {
     console.log('Você é um humano de merda, que devera ser aniquilado!!!!!!!!')
 }
 else {
-    console.log('Você é um aliem, tomara que não seja igual a um humano')
+    console.log('Você é um alien, tomara que não seja igual a um humano')
 }
