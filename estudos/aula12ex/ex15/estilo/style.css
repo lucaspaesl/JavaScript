@@ -1,0 +1,16 @@
+body{
+    background-color:rgb(54, 134, 255) ;
+    font: normal 19px arial ;
+}
+div{
+    background: white;
+    padding: 10px;
+    margin: auto;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+}
