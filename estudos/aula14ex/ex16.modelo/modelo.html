@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercicio</title>
-    <link rel="stylesheet" href="estilo//Modelo.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/Modelo.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
         <h1>Hora do dia</h1>
     </header>
     <section>
-        <input type="number">
+        <div class="dados">
+            <p>inicio: <input type="number" name="" id="txti"></p>
+            <p>fim: <input type="number" name="" id="txtf"> </p>
+            <p>passo: <input type="number" name="" id="txtp"></p>
+            <p><input type="button" value="contar" onclick="contar"> </p>
+        </div>
+        <div id="res">
+            preparando a contagem
+        </div>
     </section>
     <footer>
-        <p>LucasLima</p>
+        <p>Lucaslima</p>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 </html>
