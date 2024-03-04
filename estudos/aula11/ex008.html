@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detram</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <h1>Sistema de multa</h1>
-    Velocidade do teu carro<input type="number" name="txtvel" id="txtvel"> km/k
-    <input type="button" value="verificação" onclick="calcular()">
-    <div id="res">
-
+    <div>
+        <p>Ano de nascimento:
+            <input type="number" name="txtano" id="txtano" min="0">
+        </p>
+        <p>Sexo:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <p>
+            <input type="button" value="verificar" onclick="verificar()">
+        </p>
     </div>
-    <script>
-        function calcular() {
-            var txtv = window.document.querySelector('input#txtvel')
-            var res = window.document.querySelector('div#res')
-            var vel = Number(txtv.value)
-            res.innerHTML += `Sua velocidade atual é de <strong> ${vel}   km/h </strong>`
-            if(vel > 80){
-                res.innerHTML = `Você ultrapassou a velocidade permitida, <strong>VOCÊ FOI MULTADO!</strong>`
-            }
-            res.innerHTML += `<p>Dirija sempre com cinto de seguraça</p>`
-        }
-    </script>
+    <div id="res">
+        Preencha os dados acima para ver os dados
+    </div>
+    <footer>Lucas Lima</footer> 
+
+    <script src="script.js"></script>
 </body>
 </html>
