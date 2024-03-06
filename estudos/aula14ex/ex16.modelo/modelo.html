@@ -12,10 +12,18 @@
     </header>
     <section>
         <div class="dados">
-            <p>inicio: <input type="number" name="" id="txti"></p>
-            <p>fim: <input type="number" name="" id="txtf"> </p>
-            <p>passo: <input type="number" name="" id="txtp"></p>
-            <p><input type="button" value="contar" onclick="contar"> </p>
+            <p><label for="inicio">inicio: </label>
+                <input type="number" name="inicio" id="txti" />            
+            </p>
+            <p>
+                <label for="fim">fim: </label>
+                <input type="number" name="fim" id="txtf" />            
+            </p>
+            <p>
+                <label for="passo">passo: </label>
+                <input type="number" name="passo" id="txtp" />
+            </p>
+            <p><input type="button" value="contar" onclick="contar()" /> </p>
         </div>
         <div id="res">
             preparando a contagem
@@ -24,6 +32,6 @@
     <footer>
         <p>Lucaslima</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
